@@ -26,18 +26,28 @@ public class UserController extends JbootController {
     }
 
     public void add() {
+        int id = getParaToInt("id", 0);
+        if (id > 0) { //有id ，说明有数据提交过来，用来做修改的标识。
+            setAttr("id", id);
+        }
         render("/add.html");
     }
 
     public void doSave() {
         String username = getPara("username");
         String password = getPara("password");
+        int id = getParaToInt("id", 0);
 
         User user = new User();
         user.setUsername(username);
         user.setPassword(password);
 
-        user.save();
+        if (id > 0) { //说明是更新
+            user.setId(id);
+            user.update();
+        } else { //说明是新增
+            user.save();
+        }
 
         redirect("/user");
     }
