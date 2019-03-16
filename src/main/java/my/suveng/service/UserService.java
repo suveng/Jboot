@@ -8,6 +8,7 @@ import java.util.List;
 
 public interface UserService  {
 
+
     /**
      * find model by primary key
      *
