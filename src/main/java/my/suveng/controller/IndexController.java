@@ -1,3 +1,5 @@
+package my.suveng.controller;
+
 import com.jfinal.plugin.activerecord.Db;
 import com.jfinal.plugin.activerecord.Record;
 import io.jboot.Jboot;

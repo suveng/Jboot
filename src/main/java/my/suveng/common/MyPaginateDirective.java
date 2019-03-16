@@ -1,3 +1,5 @@
+package my.suveng.common;
+
 import io.jboot.web.directive.JbootPaginateDirective;
 import io.jboot.web.directive.annotation.JFinalDirective;
 

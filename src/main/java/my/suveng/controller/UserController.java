@@ -1,3 +1,5 @@
+package my.suveng.controller;
+
 import com.jfinal.plugin.activerecord.Page;
 import io.jboot.web.controller.JbootController;
 import io.jboot.web.controller.annotation.RequestMapping;

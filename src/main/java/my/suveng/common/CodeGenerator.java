@@ -1,3 +1,5 @@
+package my.suveng.common;
+
 import io.jboot.codegen.model.JbootModelGenerator;
 import io.jboot.codegen.service.JbootServiceGenerator;
 
