@@ -51,5 +51,10 @@ public class UserController extends JbootController {
 
         redirect("/user");
     }
+    public void del() {
+        long id = getParaToLong("id",0l);
+        userService.deleteById(id);
+        redirect("/user");
+    }
 
 }
